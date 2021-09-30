@@ -1,0 +1,265 @@
+.background-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sologon {
+  max-width: 790px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.heading1 {
+  padding-top: 40px;
+  color: white;
+  font-size: 70px;
+  line-height: 1.17;
+  font-weight: normal;
+}
+.p {
+  color: white;
+  font-size: 21px;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 20px 0 30px;
+}
+.meetus {
+  display: inline-block;
+  color: #f9d633;
+  font-weight: normal;
+  font-size: 20px;
+  position: bottom;
+  border-bottom: 4px solid;
+  width: 175px;
+  text-decoration: none;
+}
+
+.heading2 {
+  margin-top: o;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 70px;
+  padding-bottom: 20px;
+  white-space: normal;
+  line-height: 1;
+}
+
+.p2 {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: normal;
+  padding: 35px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.heading3 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 40px;
+  white-space: normal;
+  line-height: 1.35;
+  padding-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.serviceslink {
+  font-size: 21px;
+  color: #000;
+  display: inline-block;
+  border-bottom: 4px solid #000;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 0 9px;
+  margin-bottom: 60px;
+}
+
+.container2 {
+  padding-bottom: 40px;
+}
+
+.span {
+  background-color: #f9d633;
+  line-height: 1.35;
+  display: inline-block;
+  padding: 0 10px;
+}
+.headingspan {
+  background: none;
+  font-weight: 500;
+  color: white;
+}
+.scrollIcon {
+  height: 50px;
+  width: 27px;
+  bottom: 115px;
+  right: 70px;
+  border: 2px solid #fff;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 50px;
+}
+
+.scrollIconWheelOutter {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  height: 15px;
+  width: 4px;
+  margin-left: -2px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #5b5b5b;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.scrollIconWheelInner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: grey;
+  animation: scroll_1 2.75s ease-in-out infinite;
+}
+
+.scrollIcon:after {
+  content: "";
+  width: 2px;
+  height: 35px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -52px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@keyframes scroll_1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -webkit-transform: translateY(-0.6em);
+    transform: translateY(-0.6em);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  75% {
+    -webkit-transform: translateY(0.6em);
+    transform: translateY(0.6em);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sologon {
+    max-width: 330px;
+  }
+  .heading1 {
+    font-size: 42px;
+  }
+  .p {
+    font-size: 18px;
+  }
+  .scrollIcon {
+    right: 25px;
+    bottom: 50px;
+    height: 40px;
+    width: 20px;
+  }
+  .container2 {
+    padding: 55px 10px;
+    text-align: left;
+  }
+  .heading2 {
+    font-size: 36px;
+    margin: 0 auto 35px;
+    padding: 0 15px;
+  }
+  .p2 {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+  .heading3 {
+    line-height: 1.3;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .sologon {
+    max-width: 620px;
+  }
+  .heading1 {
+    font-size: 45px;
+    max-width: 500px;
+  }
+  .sologon p {
+    font-size: 18px;
+  }
+  .heading2 {
+    font-size: 36px;
+    max-width: 400px;
+    margin: 0 auto 35px;
+    padding: 60px 15px 0;
+  }
+  .p2 {
+    font-size: 20px;
+  }
+  .heading3 {
+    max-width: 480px;
+    padding: 0;
+    font-size: 27px;
+    margin: 0 auto 35px;
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .sologon {
+    max-width: 790px;
+  }
+  .heading1 {
+    font-size: 50px;
+    max-width: 560px;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading2 {
+    font-size: 40px;
+    max-width: 550px;
+    line-height: 1.2;
+  }
+}

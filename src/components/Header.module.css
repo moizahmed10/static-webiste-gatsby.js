@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.jugarh {
+}
+.contact-nav {
+  color: #f9d633;
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 4px solid;
+  min-width: 147px;
+  width: 12%;
+  text-align: left;
+  text-decoration: none;
+  line-height: 1.5;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.head {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  position: fixed;
+  padding: 16px 60px;
+  box-sizing: border-box;
+}
+.headactive {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  padding: 16px 60px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.headernonhome {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  padding: 16px 60px;
+  box-sizing: border-box;
+  position: sticky;
+}
+
+@media only screen and (max-width: 600px) {
+  .headactive {
+    position: sticky;
+
+    background-color: black;
+    padding: 16px 15px;
+  }
+
+  .head {
+    background-color: black;
+    padding: 16px 15px;
+  }
+
+  .headernonhome {
+    position: sticky;
+
+    background-color: black;
+    padding: 16px 15px;
+  }
+  .contact-nav {
+    display: none;
+  }
+  .jugarh {
+    display: none !important;
+  }
+}

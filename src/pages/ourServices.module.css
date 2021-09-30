@@ -1,0 +1,158 @@
+.heading {
+  padding-top: 40px;
+  font-size: 45px;
+  margin: 25px auto 25px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.content {
+  font-size: 23px;
+  padding-bottom: 40px;
+}
+.content2 {
+  font-size: 22px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.cardHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heading2 {
+  padding-top: 100px;
+  font-size: 35px;
+  margin: 25px auto 25px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.link {
+  color: black;
+  font-weight: 800;
+  font-size: 21px;
+  border-bottom: 4px solid;
+  text-decoration: none;
+  padding: 0 9px;
+  line-height: 1.5;
+}
+
+.divcard {
+  width: 33%;
+  flex: 0 0 33%;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.divcard:nth-child(2) {
+  top: 50px;
+}
+
+.divcard:nth-child(5) {
+  top: 60px;
+}
+.divcard:nth-child(3) {
+  top: 100px;
+}
+.divcard:nth-child(6) {
+  top: 110px;
+}
+
+.lowerContent {
+  padding: 100px 45px 80px;
+}
+@media only screen and (max-width: 600px) {
+  .heading {
+    text-align: left;
+    font-size: 36px;
+    padding: 25px 15px;
+    max-width: 400px;
+    padding-bottom: 15px;
+  }
+  .content {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+  .cardHolder {
+    flex-direction: column;
+  }
+  .divcard {
+    width: 100% !important;
+    flex: 0 0 100%;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .divcard:nth-child(2) {
+    top: 0px !important;
+  }
+  .divcard:nth-child(3) {
+    top: 0 !important;
+  }
+  .divcard:nth-child(4) {
+    top: 0px !important;
+  }
+  .divcard:nth-child(5) {
+    top: 0 !important;
+  }
+  .divcard:nth-child(6) {
+    top: 0px !important;
+  }
+  .heading2 {
+    text-align: left;
+    font-size: 28px;
+  }
+  .content2 {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .heading {
+    max-width: 400px;
+    font-size: 40px;
+  }
+  .content {
+    font-size: 20px;
+    text-align: center;
+  }
+  .cardHolder {
+    min-width: 100%;
+  }
+  .divcard {
+    width: 50%;
+    flex: 0 0 50%;
+    padding-bottom: 10px;
+  }
+  .divcard:nth-child(2) {
+    top: 50px;
+  }
+  .divcard:nth-child(3) {
+    top: 0;
+  }
+  .divcard:nth-child(4) {
+    top: 50px;
+  }
+  .divcard:nth-child(5) {
+    top: 0;
+  }
+  .divcard:nth-child(6) {
+    top: 50px;
+  }
+  .lowerContent {
+    padding: 80px 15px 60px;
+  }
+  .heading2 {
+    padding: 0;
+    max-width: 490px;
+    font-size: 27px;
+  }
+  .content2 {
+    font-size: 18px;
+  }
+}

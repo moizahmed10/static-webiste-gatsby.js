@@ -1,0 +1,74 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../assets/fonts/Graphik-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Graphik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../assets/fonts/Graphik-Extralight.woff2") format("woff2"),
+    url("../assets/fonts/Graphik-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("../assets/fonts/Graphik-Semibold.woff2") format("woff2"),
+    url("../assets/fonts/Graphik-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("../assets/fonts/Graphik-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Graphik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../assets/fonts/Graphik-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Graphik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Graphik";
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  /* overflow-x: hidden; */
+  background-color: #f9f9f9;
+  transition-duration: 4000ms;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gainsboro;
+}
+.slick-dots li button:before {
+  content: none;
+}
+.slick-dots li.slick-active button {
+  background-color: black;
+}
